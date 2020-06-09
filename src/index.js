@@ -1,17 +1,38 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import SquareBox from './game-buttons.js'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const Game = () => {
+
+  let response;
+  async function test () {
+      response = await fetch('/api/world', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ post: "rakesh how are you? haanji" }),
+    });
+    console.log(await response.text());
+  }
+
+    
+  test();
+
+  return (
+    <div className="main-container">
+      <div className="title-container">
+        <h3 className="game-title">TIC - TAC - TOE</h3>
+
+      </div>
+      <SquareBox />
+    </div>
+  )
+}
+
+
+ReactDOM.render(<Game />, document.getElementById('root'));
+
+export default Game;
