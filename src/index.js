@@ -24,7 +24,8 @@ const Game = () => {
   return (
     <div className="main-container">
       <div className="title-container">
-        <h3 className="game-title">TIC - TAC - TOE 01</h3>
+
+        <h3 className="game-title">TIC - TAC - TOE Testing with github</h3>
 
       </div>
       <SquareBox />
