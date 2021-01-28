@@ -13,7 +13,7 @@ const Game = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ post: "rakesh how are you? haanji" }),
+      body: JSON.stringify({ post: "developer: rakesh" }),
     });
     console.log(await response.text());
   }
@@ -25,7 +25,7 @@ const Game = () => {
     <div className="main-container">
       <div className="title-container">
 
-        <h3 className="game-title">TIC - TAC - TOE Testing with github</h3>
+        <h3 className="game-title">TIC - TAC - TOE</h3>
 
       </div>
       <SquareBox />

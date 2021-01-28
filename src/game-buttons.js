@@ -230,7 +230,7 @@ const SquareBox = () => {
                 </SplitText>
             </div>
 
-            <Chart className="piechart"
+            {/* <Chart className="piechart"
                 width={'500px'}
                 height={'300px'}
                 chartType="PieChart"
@@ -244,7 +244,7 @@ const SquareBox = () => {
                     title: 'Win Propotions',
                 }}
                 rootProps={{ 'data-testid': '1' }}
-            />
+            /> */}
 
         </div >
 
