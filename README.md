@@ -1,2 +1,2 @@
-# One Day Project
+# One Day Project | for portfolio
 Tic-Tac-Toe
